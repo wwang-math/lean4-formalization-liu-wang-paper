@@ -1,0 +1,33 @@
+import LiuWang.LiuWang2025SemilinearWaveReflectedBoundarySobolevClosure
+
+open Filter Topology
+open LiuWang2025SemilinearWaveReflectedBoundarySobolevClosure
+
+#check boundaryDecayExponent_antitone_in_derivativeOrder
+#check boundaryDecayRate_le_topOrder
+#check FiniteTangentialDerivativeExpansion.norm_boundaryDerivative_le_topOrder
+#check FiniteTangentialDerivativeExpansion.derivativeL1Envelope_le_topOrder
+#check FiniteTangentialDerivativeExpansion.derivativeL1Envelope_tendsto_zero
+#check FiniteTangentialDerivativeExpansion.derivativeL2Envelope_le_derivativeL1Envelope
+#check FiniteTangentialDerivativeExpansion.derivativeL2Envelope_tendsto_zero
+#check ReflectedBoundarySobolevClosure.boundaryTrace_tendsto_zero
+#check ReflectedBoundarySobolevClosure.certificate
+#check SobolevClosedPointRecoveryData.coefficient_eq_zero
+#check SobolevClosedPointRecoveryData.certificate
+
+example
+    {Index E B : Type*} [Fintype Index] [DecidableEq Index]
+    [SeminormedAddCommGroup E] [SeminormedAddCommGroup B]
+    (data : ReflectedBoundarySobolevClosure Index E B) :
+    Tendsto data.boundaryTrace atTop (nhds 0) :=
+  data.boundaryTrace_tendsto_zero
+
+#print axioms boundaryDecayRate_le_topOrder
+#print axioms FiniteTangentialDerivativeExpansion.norm_boundaryDerivative_le_topOrder
+#print axioms FiniteTangentialDerivativeExpansion.derivativeL1Envelope_tendsto_zero
+#print axioms FiniteTangentialDerivativeExpansion.derivativeL2Envelope_le_derivativeL1Envelope
+#print axioms FiniteTangentialDerivativeExpansion.derivativeL2Envelope_tendsto_zero
+#print axioms ReflectedBoundarySobolevClosure.boundaryTrace_tendsto_zero
+#print axioms ReflectedBoundarySobolevClosure.certificate
+#print axioms SobolevClosedPointRecoveryData.coefficient_eq_zero
+#print axioms SobolevClosedPointRecoveryData.certificate

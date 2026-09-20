@@ -1,0 +1,32 @@
+import LiuWang.LiuWang2025SemilinearWaveContinuousNemytskii
+
+open LiuWang2025SemilinearWaveContinuousNemytskii
+
+#check coefficientMultilinear_apply_point
+#check coefficientMultilinear_apply_const_point
+#check Data.nonlinearResidual_apply
+#check Data.nonlinearResidual_apply_point
+#check Data.eventually_residual_solutionMap_eq_zero
+#check Data.eventually_solutionMap_pointwise_equation
+#check Data.fderiv_solutionMap_zero
+#check Data.nonlinearSourceSecondJet_eq_zero
+#check Data.secondVariation_eq_zero
+#check Data.thirdVariation_equation
+#check Data.thirdVariation_pointwise_equation
+#check Data.HigherLinearizationCertificate
+#check Data.higherLinearizationCertificate
+#check Data.certificate
+
+#print axioms coefficientMultilinear_apply_point
+#print axioms coefficientMultilinear_apply_const_point
+#print axioms Data.nonlinearResidual_apply
+#print axioms Data.nonlinearResidual_apply_point
+#print axioms Data.eventually_residual_solutionMap_eq_zero
+#print axioms Data.eventually_solutionMap_pointwise_equation
+#print axioms Data.fderiv_solutionMap_zero
+#print axioms Data.nonlinearSourceSecondJet_eq_zero
+#print axioms Data.secondVariation_eq_zero
+#print axioms Data.thirdVariation_equation
+#print axioms Data.thirdVariation_pointwise_equation
+#print axioms Data.higherLinearizationCertificate
+#print axioms Data.certificate

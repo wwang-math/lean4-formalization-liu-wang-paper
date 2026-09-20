@@ -1,0 +1,23 @@
+import LiuWang.LiuWang2025SemilinearWaveEquation44RateRobustRecovery
+
+open Filter MeasureTheory
+open scoped Real Topology
+
+namespace LiuWangEquation44RateRobustRecoveryTest
+
+open LiuWang2025SemilinearWaveComplexStationaryPhase
+open LiuWang2025SemilinearWaveEquation44RateRobustRecovery
+
+#check chart_composed_tendsto_of_remainder_tendsto
+#check chart_composed_lead_eq_zero_of_remainder_tendsto
+#check RateRobustEquation44Data.measured_tendsto_leading
+#check RateRobustEquation44Data.lead_eq_zero
+#check RateRobustEquation44Data.coefficient_eq_zero
+#check RateRobustEquation44Data.certificate
+
+#print axioms chart_composed_tendsto_of_remainder_tendsto
+#print axioms chart_composed_lead_eq_zero_of_remainder_tendsto
+#print axioms RateRobustEquation44Data.coefficient_eq_zero
+#print axioms RateRobustEquation44Data.certificate
+
+end LiuWangEquation44RateRobustRecoveryTest

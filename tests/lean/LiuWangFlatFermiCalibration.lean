@@ -1,0 +1,22 @@
+import LiuWang.LiuWang2025SemilinearWaveVerification
+
+open LiuWangVerification
+
+example :
+    LiuWang2025SemilinearWaveVerification.stageStatus
+        .flatFermiReflectedBeamCalibration = .verified :=
+  LiuWang2025SemilinearWaveVerification.flatFermiReflectedBeamCalibration_is_verified
+
+#check LiuWang2025SemilinearWaveFlatBeam.Fermi.fermiGinv_derived
+#check LiuWang2025SemilinearWaveFlatBeam.Fermi.hasDerivAt_Hmat
+#check LiuWang2025SemilinearWaveFlatBeam.Fermi.phiF_im_coercive
+#check LiuWang2025SemilinearWaveFlatBeam.Fermi.two_transverse_not_coercive
+#check LiuWang2025SemilinearWaveFlatBeam.Fermi.boxF_UF
+#check LiuWang2025SemilinearWaveFlatBeam.Fermi.Udiff_zero_at_z_zero
+#check LiuWang2025SemilinearWaveFlatBeam.Fermi.memLp_beamF
+#check LiuWang2025SemilinearWaveFlatBeam.Fermi.memLp_resFv
+#check LiuWang2025SemilinearWaveFlatBeam.Fermi.residual_relative_bound
+#check LiuWang2025SemilinearWaveFlatBeam.Fermi.not_memLp_beamF_zero_lam
+
+#print axioms LiuWang2025SemilinearWaveFlatBeam.Fermi.flatFermiCalibrationCertificate
+#print axioms LiuWang2025SemilinearWaveVerification.flatFermiReflectedBeamCalibration_is_verified
